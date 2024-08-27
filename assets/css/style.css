@@ -744,7 +744,15 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  padding-right: 90px;
 }
+
+@media (max-width: 768px) { /* Adjust the max-width value based on your desired breakpoint */
+  .portfolio-details {
+    padding-right: 0;
+  }
+}
+
 
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
@@ -792,7 +800,9 @@ section {
 
 .portfolio-details .portfolio-description {
   padding-top: 30px;
+  text-align: justify;
 }
+
 
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
