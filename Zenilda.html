@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+      }
+      .grid-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        aspect-ratio: 1 / 1;
+      }
+      .grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 500ms;
+        cursor: pointer;
+      }
+      .grid-item img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+
+    <!-- Favicons -->
+    <link href="assets/img/iconic.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon2.png" rel="apple-touch-icon2" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💚 Zenilda</title>
+    <link href="assets/tailwind.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 m-0">
+    <div class="relative h-screen">
+      <img
+        src="assets/img/zeni/our-photo.jpg"
+        alt="Zenilda"
+        class="w-full h-full object-cover"
+      />
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white"
+      >
+        <h1
+          class="text-3xl font-bold mb-4"
+          style="font-family: 'Dancing Script', cursive"
+        >
+          My love story with Zenilda
+        </h1>
+        <p class="text-center" style="padding-left: 20px; padding-right: 20px">
+          A tale of love, laughter, and the unbreakable bond that weaves our
+          hearts as one.
+        </p>
+      </div>
+    </div>
+    <div style="margin-top: 20px; margin-bottom: 0px">
+      <h1
+        style="
+          font-family: 'Dancing Script', cursive;
+          font-size: 1.5rem;
+          padding: 1rem;
+        "
+        class="font-bold"
+      >
+        Galeri Terkini Zenilda
+      </h1>
+      <div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+            padding: 1rem;
+          "
+        >
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 0.5rem;
+              box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <img
+              src="assets/img/zeni/zeni-1.png"
+              alt="Zenilda"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 500ms;
+                cursor: pointer;
+              "
+              onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 0.5rem;
+              box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <img
+              src="assets/img/zeni/zeni-2.png"
+              alt="Zenilda"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 500ms;
+                cursor: pointer;
+              "
+              onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 0.5rem;
+              box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <img
+              src="assets/img/zeni/zeni-3.png"
+              alt="Zenilda"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 500ms;
+                cursor: pointer;
+              "
+              onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 0.5rem;
+              box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <img
+              src="assets/img/zeni/zeni-4.png"
+              alt="Zenilda"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 500ms;
+                cursor: pointer;
+              "
+              onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 0.5rem;
+              box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <img
+              src="assets/img/zeni/zeni-5.png"
+              alt="Zenilda"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 500ms;
+                cursor: pointer;
+              "
+              onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 0.5rem;
+              box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <img
+              src="assets/img/zeni/zeni-6.png"
+              alt="Zenilda"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 500ms;
+                cursor: pointer;
+              "
+              onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 0.5rem;
+              box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <img
+              src="assets/img/zeni/zeni-7.png"
+              alt="Zenilda"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 500ms;
+                cursor: pointer;
+              "
+              onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 0.5rem;
+              box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <img
+              src="assets/img/zeni/zeni-8.png"
+              alt="Zenilda"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 500ms;
+                cursor: pointer;
+              "
+              onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+          <div
+            style="
+              position: relative;
+              overflow: hidden;
+              border-radius: 0.5rem;
+              box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            "
+          >
+            <img
+              src="assets/img/zeni/zeni-9.png"
+              alt="Zenilda"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 500ms;
+                cursor: pointer;
+              "
+              onmouseover="this.style.transform='scale(1.05)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+        </div>
+      </div>
+
+      <style>
+        @media (max-width: 768px) {
+          div > div {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+        }
+      </style>
+      <div style="margin-top: 20px; margin-bottom: 20px; padding: 1rem">
+        <h1
+          style="font-family: 'Dancing Script', cursive; font-size: 1.5rem"
+          class="font-bold"
+        >
+          Acceptance
+        </h1>
+        <p style="margin-top: 2rem; text-align: justify">
+          Haiii, tulisan ini kubuat untuk zeni, mungkin terkesan agak alay dan
+          gen-z sekali, tapi takpee wehehe, percayalah tulisan ini sebenarnya
+          hanya untuk mengingatkan aku sendiri tentang berharganya kamu buat
+          aku.
+        </p>
+        <ul>
+          <li style="margin-top: 2rem; text-align: justify">
+            <strong>Chapter 0 : Fase Perkenalan</strong>
+            <p style="margin-top: 1rem">
+              SMA Negeri 6 jadi momen pertemuan ku dengan zeni, selama 1 tahun
+              tidak pernah ada momen yang membuat kita dekat, bahkan ngobrol pun
+              jarang, akhirnya kita dipertemukan dari keputusanku yang
+              menggantikan mas jo jadi coach di smanam, sering ngobrol soal skkp
+              dan banyak hal tentang adikmu, awal aku inget namamu bahkan karena
+              livia yang emang mirip banget sumpah sama kamu, dan dari sana aku
+              mulai kenal kembali sosok zenilda yang selama ini tidak masuk
+              dalam radarku wkwkwk
+            </p>
+          </li>
+          <li style="margin-top: 2rem; text-align: justify">
+            <strong>Chapter 1 : PDKT</strong>
+            <p style="margin-top: 1rem">
+              Semua bermula sejak intensitas chat menjadi bukti nyata bahwa ada
+              perasaan antara kamu dan aku, dan semua karena SKKP, diawal aku
+              sama sekali ndak pernah anggap kamu atau bahkan punya pikiran
+              untuk suka sama kamu, karena ya kamu mbak ku, dan livia adekmu
+              adalah adekku juga di SKKP, tapi semua menjadi semakin nyata
+              dimana kita mulai dekat hanya dengan saling kirim video reels,
+              curhat tentang kerjaan, bahkan sampai ke dengerin nangismu yang
+              bahkan aku nggak ngerti harus gimana, satu momen yang buat aku
+              ngomong “lapo wong iki” adalah momen dimana kamu main ke kantor
+              dan kamu nangis di depanku yang diliat sama adekmu dan aku gak tau
+              apa penyebabnya, hadehhh your mood control is broken zen, aku tipe
+              orang yang cukup tau dan berani untuk deketin orang, tapi nggak
+              dengan yang ini, aku bahkan berani untuk ngomong “iso iki aku
+              oleh” tapi nggak, karena kondisinya kamu mbak ku wkwkwk, tapi
+              setelah semua validasi yang tak rasakan aku ngerasa sepertinya
+              kamu juga suka sama aku deh wahahah, tapi memang kondisinya nggak
+              pas karena kita hanya berjumpa via chat dan reels
+            </p>
+          </li>
+          <li style="margin-top: 2rem; text-align: justify">
+            <strong>Chapter 2 : Ditembak Dor ..</strong>
+            <p style="margin-top: 1rem">
+              Sempet kaget dimana sebenernya aku masih ragu dengan kondisi ini,
+              iya sih aku udah nggak sama yang lain dan nggak ada siapapun yang
+              kudeketin, sekalipun aku masih chat dan berbagi cerita dengan
+              mereka tapi sudah tidak ada rasa, karena aku sadar tujuanku udah
+              ke kamu, sejak november 2023, tapi rasanya masih aneh dan terlalu
+              cepat, sehingga aku perlu untuk cari tau sampe dimana kamu juga
+              suka dengan aku, dan tervalidasi oleh mas octo yang bilang hal
+              itu. dannn pada akhirnya kamu duluan yang ngomong, aku tak tau
+              kamu mikir apa tapi aku respect, jujur aja aku nggak punya
+              pengalaman nembak cewek, yang dulu lebih ke seperti kesepakatan
+              dan ngobrol, bahkan di awal pacaran ceweknya dulu yang nembak,
+              hadehhh, aku cukup kaget karena kupikir ndak akan secepat itu tapi
+              sepertinya kamu emang udah nggak tahan, karena dari beberapa chat
+              kamu cukup slowres di beberapa waktu, yang membuat aku mikir
+              sepertinya kamu masih belum total
+            </p>
+          </li>
+          <li style="margin-top: 2rem; text-align: justify">
+            <strong>Chapter 3 : Giving up because of my past problems</strong>
+            <p style="margin-top: 1rem">
+              Aku berasal dari keluarga broken home, real broken gak kek gen z
+              jaman sekarang yang cuma dilarang pulang jam 10 aja udah bilang
+              keluarga broken home. keluarga ku dan kamu tau kenapa, dengan
+              orangtua, dan keuangan mereka, aku juga kerja dengan gaji yang
+              mungkin gak masuk akal, 2 juta per bulan, bahkan aku juga bukan
+              orang yang suci seperti yang kuperlihatkan di banyak orang, aku
+              sempat menyerah dan bilang bahwa ini nggak akan bisa lanjut, cewek
+              mana yang bisa dengan cowok berisiko seperti ini, jujur setelah
+              confess, perasaanku berhenti di suka dan sayang aja, gak kepikiran
+              lebih karena aku tau kalo ini nggak akan lanjut, makanya aku mau
+              cerita secara offline karena emang semuanya nggak bisa diungkapkan
+              via suara, aku selalu nggak mau pasanganku kecewa, 3 bulan dari
+              sejak kita saling ngungkapin perasaan aku terus”an mikir apakah
+              aku cerita atau nggak, terlebih dari itu aku masih mati rasa
+              dengan namanya cinta, 50:50 mungkin rasio yang paling pas untuk
+              kondisiku saat itu, disisi manusia aku lihat karena kamu wanita
+              yang sangat cocok, tapi disisi lain aku yakin dengan kondisiku
+              yang punya background buruk akan susah, aku mulai konsultasi
+              secara implisit ke beberapa orang dan ke beberapa teman, ada yang
+              bilang “cerita aja kalau sudah jadi dan mau nikah”, tapi satu kata
+              dari seorang adik yang bilang “sampean nggak fair kalo nggak
+              cerita semua diawal ke mbak zen, sama seperti ngasih harapan
+              palsu, masak nggak boleh mbak zen menolak, masak harus bisa terima
+              apa adanya” disini aku liat bahwa egoku terlalu tinggi, aku mau
+              “diterima” tanpa sadar bahwa orang tuh berhak loh nolak, aku
+              melihat diriku sama seperti sales obat abal” yang memberikan
+              harapan sembuh tapi sebenarnya hal itu adalah palsu. aku bergumul
+              terus apakah harus aku ceritakan, dan pada akhirnya aku menyerah.
+              aku berpikir semua akan kuceritakan termasuk dosaku, aku sudah
+              tidak pernah berharap ada mukjizat dan biarlah semua berjalan apa
+              adanya
+            </p>
+          </li>
+          <li style="margin-top: 2rem; text-align: justify">
+            <strong>Chapter 4 : Keterbukaan Awal Pemulihan</strong>
+            <p style="margin-top: 1rem">
+              Diperjalanan pacet aku merasa semua otak ku dan tenagaku terkuras
+              habis, aku keriget dingin karena ini pengalamanku yang pertama
+              cerita semua tentang hidupku, diterpa hujan dan kondisi badan yang
+              lelah, aku sudah merasa bahwa semua akan sia”, aku mulai cerita
+              dari kerjaan ku, kemudian berlanjut ke keluargaku, sampai pada
+              akhirnya aku cerita ke dosaku, seketika rasa yang sudah aku bangun
+              berbulan” ke kamu hilang dan semua terasa hambar kembali, aku
+              mulai kembali ke mode irgy loser yang tidak peduli dengan
+              siapapun, momen itu adalah momen dimana aku menagis dalam cerita,
+              dan inget kembali momen dimana aku minta ampun sama tuhan dimotor
+              saat setelah melakukan dosa, kamu peluk aku dan itu menenangkan.
+              Disana aku sama sekali tidak berharap kamu akan terima aku, sama
+              sekali, tapi aku lega akhirnya aku bisa cerita ke orang lain, aku
+              merasa hatiku plong dan nggak ada kegelisahan “akhirnya aku bisa
+              cerita dan ada orang yang tau” emang agak gila dan berisiko karena
+              aku ngasuh banyak anak, dan dengan kondisi seperti ini kemungkinan
+              untuk berita menyebar sangat mudah, tapi ntah kenapa keterbukaan
+              itu selalu membawa pemulihan dalam hidupku, semakin banyak aku
+              cerita semakin banyak pemulihan dan penerimaan diri ada dalam
+              hidupku
+            </p>
+          </li>
+          <li style="margin-top: 2rem; text-align: justify">
+            <strong>Chapter 5 : Kak Jo</strong>
+            <p style="margin-top: 1rem">
+              Mungkin ini sedikit keluar jalur tapi hal ini ntah kenapa selalu
+              ingin kuceritakan, menurutku tuhan selalu baik dalam hidupku,
+              sekalipun aku pernah pindah agama, aku berdosa, ntah kenapa tuhan
+              selalu tarik balik aku, dan di kondisiku sama kamu, tuhan kirim
+              kak jo untuk tarik aku balik, aku nggak bayangin kalo kak jo nggak
+              ada saat itu mungkin aku sudah jadi makin nggak karuan sekarang,
+              aku lihat semua yang dilakukan tuhan lewat masjo, yang perlahan
+              buat aku kembali sama tuhan. seperti anak yang hilang, aku sudah
+              cukup hancur untuk ngomong bisa kembali lagi. dan ya tuhan
+              pulihkan semuanya, bahkan sampe aku dapet kamu, dan semua karena
+              pertolongan tuhan lewat kak jo
+            </p>
+          </li>
+          <li style="margin-top: 2rem; text-align: justify">
+            <strong>Chapter 6 : Acceptance</strong>
+            <p style="margin-top: 1rem">
+              Pada akhirnya kamu memutuskan untuk terima aku, dimomen itu aku
+              ngomong sama tuhan “gini ya rasanya kasih, jadi ini yang tuhan
+              rasakan setiap harinya, terima aku terus” dari sana aku sudah
+              nggak punya pikiran lain selain kasih semua ke kamu, bagiku aku
+              sudah menyerah tentang hubungan ini dan bersiap untuk kembali
+              menjalani hidup sendiri dan fokus kerja, aku lihat kamu sama
+              seperti tuhan yang mengorbankan segala kebahagiannya buat orang
+              yang berdosa seperti aku, kamu mau terima aku dari segala
+              kekuranganku, keterbatasanku, dan aku cuma bisa ngomong
+              “terimakasih tuhan”, bagiku penerimaan itu segalanya, penerimaan
+              akan terus memberikan kehidupan bagi manusia, karena artinya ia
+              punya nilai kasih dalam hidupnya, aku jatuh cinta karena
+              penerimaan mu, dan akan terus seperti itu, aku akan terus menjaga
+              apa yang kamu percayakan ke aku dari penerimaan itu, ya aku sudah
+              menemukan kembali arti cinta itu
+            </p>
+          </li>
+          <li style="margin-top: 2rem; text-align: justify">
+            <strong>Chapter 7 : End (All About You)</strong>
+            <p style="margin-top: 1rem">
+              Kamu cantik, sabar dikit, tipeku banget, baik, mandiri, nangisan,
+              moodmu gak karuan, sambatan, ngeyelan, bingung, gajelas, receh,
+              ngorokan, selalu mikirin orang lain, pelukannya nyaman, kadang
+              meso" wkwkwk, ngomong e banyak, kuat nggak sakit”an, nggak pd,
+              ovt, pendendam, dan selalu percaya tanda yang aku nggak tau itu
+              apa wkwkwk. Aku cinta banget sama kamu, sayang banget pake banget
+              beribu kali, tiap hari kangenku ke kamu selalu baru, rasanya
+              kangen terus, bahkan aku sampe udah gak peduli sama mereka” yang
+              pernah ada dihidupku sebelumnya, dan mau fokus sama kamu aja, baru
+              ini aku mulai mikirin nikah, dan aku mau nikah sama kamu, sumpah
+              kamu jangan kemana” ya, sama aku aja, please yaa, aku usahakan
+              semuanya bisa aku kasih buat kamu, aku nggak pernah sejatuh cinta
+              ini, beneran ini nggak bullshit, aku pengen banget kamu ada sama
+              aku terus, kamu bisa ngertiin kodisiku, dan aku seneng terus kalo
+              sama kamu, aku berasa orang paling beruntung dapet kamu,
+              segimananya nanti kita, aku pengen terus sama kamu. aku terus
+              berdoa buat kamu, dan kita bisa terus tuhan kasih kesempatan untuk
+              bareng” terus. Makasih sudah mau terima aku, I can't do it without
+              you. Thank you for your support. I'm grateful for your support.
+              Thank you for being a part of my journey.
+            </p>
+          </li>
+        </ul>
+        <p style="margin-top: 1rem">
+          Cerita ini akan bersambung sampe kita tua dan bareng sama" ketemu
+          Tuhan ya Zen ...
+        </p>
+
+        <p style="margin-top: 4rem">Someone who loves you 💚</p>
+        <p style="margin-top: 0rem; font-family: 'Dancing Script', cursive">
+          - Stefanus Irgy 
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
