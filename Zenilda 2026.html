@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💚 Zenilda — Our Love Story 2026</title>
+
+    <link href="assets/img/iconic.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon2.png" rel="apple-touch-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Dancing+Script:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --green-deep: #1a3a2f;
+        --green-mid: #2d6a4f;
+        --green-soft: #52b788;
+        --green-light: #b7e4c7;
+        --cream: #faf8f5;
+        --cream-dark: #f0ebe3;
+        --gold: #c9a96e;
+        --gold-light: #e8d5b0;
+        --text: #2c2c2c;
+        --text-muted: #6b6b6b;
+        --shadow: 0 8px 32px rgba(26, 58, 47, 0.12);
+        --shadow-lg: 0 20px 60px rgba(26, 58, 47, 0.18);
+        --radius: 1rem;
+        --radius-lg: 1.5rem;
+        --font-display: "Dancing Script", cursive;
+        --font-serif: "Cormorant Garamond", Georgia, serif;
+        --font-body: "Outfit", system-ui, sans-serif;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-body);
+        background: var(--cream);
+        color: var(--text);
+        line-height: 1.7;
+        overflow-x: hidden;
+      }
+
+      /* ── Hero ── */
+      .hero {
+        position: relative;
+        height: 100vh;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .hero__bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+
+      .hero__bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        animation: kenBurns 20s ease-in-out infinite alternate;
+      }
+
+      @keyframes kenBurns {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.08);
+        }
+      }
+
+      .hero__overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          160deg,
+          rgba(26, 58, 47, 0.75) 0%,
+          rgba(45, 106, 79, 0.55) 40%,
+          rgba(0, 0, 0, 0.45) 100%
+        );
+        z-index: 1;
+      }
+
+      .hero__content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        color: #fff;
+        padding: 2rem;
+        max-width: 720px;
+        animation: fadeUp 1.2s ease both;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .hero__badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--green-light);
+        border: 1px solid rgba(183, 228, 199, 0.4);
+        padding: 0.4rem 1.2rem;
+        border-radius: 999px;
+        margin-bottom: 1.5rem;
+        backdrop-filter: blur(8px);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .hero__title {
+        font-family: var(--font-display);
+        font-size: clamp(2.8rem, 8vw, 5rem);
+        font-weight: 700;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+        text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero__subtitle {
+        font-family: var(--font-serif);
+        font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+        font-style: italic;
+        opacity: 0.92;
+        max-width: 520px;
+        margin: 0 auto 2rem;
+        font-weight: 400;
+      }
+
+      .hero__scroll {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.7rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        animation: bounce 2s ease infinite;
+      }
+
+      .hero__scroll-line {
+        width: 1px;
+        height: 40px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), transparent);
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateX(-50%) translateY(0);
+        }
+        50% {
+          transform: translateX(-50%) translateY(8px);
+        }
+      }
+
+      /* ── Section shared ── */
+      .section {
+        padding: 5rem 1.5rem;
+      }
+
+      .section--alt {
+        background: var(--cream-dark);
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 3.5rem;
+      }
+
+      .section-header__label {
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--green-mid);
+        margin-bottom: 0.75rem;
+      }
+
+      .section-header__title {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 5vw, 3rem);
+        color: var(--green-deep);
+        font-weight: 700;
+      }
+
+      .section-header__divider {
+        width: 60px;
+        height: 2px;
+        background: linear-gradient(90deg, var(--gold), var(--green-soft));
+        margin: 1rem auto 0;
+        border-radius: 2px;
+      }
+
+      /* ── Gallery ── */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .gallery__item {
+        position: relative;
+        overflow: hidden;
+        border-radius: var(--radius);
+        cursor: pointer;
+        aspect-ratio: 1;
+        box-shadow: var(--shadow);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+
+      .gallery__item:nth-child(1) {
+        grid-column: span 2;
+        grid-row: span 2;
+        aspect-ratio: auto;
+      }
+
+      .gallery__item:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .gallery__item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .gallery__item:hover img {
+        transform: scale(1.06);
+      }
+
+      .gallery__item::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba(26, 58, 47, 0.5) 0%,
+          transparent 50%
+        );
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+
+      .gallery__item:hover::after {
+        opacity: 1;
+      }
+
+      .gallery__zoom {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 2;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transform: scale(0.8);
+        transition: opacity 0.3s, transform 0.3s;
+        font-size: 1rem;
+      }
+
+      .gallery__item:hover .gallery__zoom {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      /* ── Lightbox ── */
+      .lightbox {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        background: rgba(10, 20, 15, 0.92);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+        backdrop-filter: blur(12px);
+      }
+
+      .lightbox.active {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .lightbox img {
+        max-width: 90vw;
+        max-height: 85vh;
+        object-fit: contain;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-lg);
+        transform: scale(0.9);
+        transition: transform 0.3s ease;
+      }
+
+      .lightbox.active img {
+        transform: scale(1);
+      }
+
+      .lightbox__close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        width: 44px;
+        height: 44px;
+        border: none;
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .lightbox__close:hover {
+        background: rgba(255, 255, 255, 0.25);
+      }
+
+      .lightbox__nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 48px;
+        height: 48px;
+        border: none;
+        background: rgba(255, 255, 255, 0.12);
+        color: #fff;
+        font-size: 1.4rem;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+
+      .lightbox__nav:hover {
+        background: rgba(255, 255, 255, 0.22);
+      }
+
+      .lightbox__prev {
+        left: 1.5rem;
+      }
+
+      .lightbox__next {
+        right: 1.5rem;
+      }
+
+      /* ── Story intro ── */
+      .story-intro {
+        max-width: 680px;
+        margin: 0 auto 3rem;
+        text-align: center;
+        font-family: var(--font-serif);
+        font-size: 1.15rem;
+        color: var(--text-muted);
+        line-height: 1.9;
+      }
+
+      .story-intro em {
+        color: var(--green-mid);
+        font-style: italic;
+      }
+
+      /* ── Timeline ── */
+      .timeline {
+        position: relative;
+        padding-left: 2rem;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(
+          to bottom,
+          var(--green-soft),
+          var(--gold-light),
+          var(--green-light)
+        );
+        border-radius: 2px;
+      }
+
+      .chapter {
+        position: relative;
+        margin-bottom: 2.5rem;
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+      }
+
+      .chapter.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .chapter::before {
+        content: "";
+        position: absolute;
+        left: calc(-2rem - 5px);
+        top: 1.5rem;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--green-soft);
+        border: 3px solid var(--cream-dark);
+        box-shadow: 0 0 0 2px var(--green-soft);
+        z-index: 1;
+      }
+
+      .chapter__card {
+        background: #fff;
+        border-radius: var(--radius-lg);
+        padding: 2rem 2.25rem;
+        box-shadow: var(--shadow);
+        border: 1px solid rgba(45, 106, 79, 0.08);
+        transition: box-shadow 0.3s ease;
+      }
+
+      .chapter__card:hover {
+        box-shadow: var(--shadow-lg);
+      }
+
+      .chapter__number {
+        font-size: 0.65rem;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 0.5rem;
+      }
+
+      .chapter__title {
+        font-family: var(--font-serif);
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--green-deep);
+        margin-bottom: 1rem;
+        line-height: 1.3;
+      }
+
+      .chapter__body {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        text-align: justify;
+        line-height: 1.85;
+      }
+
+      /* ── Footer / Closing ── */
+      .closing {
+        text-align: center;
+        padding: 4rem 1.5rem 5rem;
+        background: linear-gradient(
+          180deg,
+          var(--cream-dark) 0%,
+          var(--green-deep) 100%
+        );
+        color: #fff;
+      }
+
+      .closing__quote {
+        font-family: var(--font-serif);
+        font-size: clamp(1.2rem, 3vw, 1.6rem);
+        font-style: italic;
+        max-width: 600px;
+        margin: 0 auto 2rem;
+        opacity: 0.92;
+        line-height: 1.8;
+      }
+
+      .closing__heart {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        animation: pulse 2s ease infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.15);
+        }
+      }
+
+      .closing__sign {
+        font-size: 0.85rem;
+        opacity: 0.75;
+        margin-bottom: 0.25rem;
+      }
+
+      .closing__name {
+        font-family: var(--font-display);
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      /* ── Reveal animation ── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 768px) {
+        .gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .gallery__item:nth-child(1) {
+          grid-column: span 2;
+          grid-row: span 1;
+          aspect-ratio: 16/9;
+        }
+
+        .timeline {
+          padding-left: 1.5rem;
+        }
+
+        .chapter::before {
+          left: calc(-1.5rem - 5px);
+        }
+
+        .chapter__card {
+          padding: 1.5rem;
+        }
+
+        .lightbox__nav {
+          display: none;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .section {
+          padding: 3.5rem 1rem;
+        }
+
+        .gallery {
+          grid-template-columns: 1fr 1fr;
+          gap: 0.6rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero__bg">
+        <img src="assets/img/zeni/our-photo.jpg" alt="Zenilda" />
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <span class="hero__badge">Since 2023 · Forever</span>
+        <h1 class="hero__title">My Love Story with Zenilda</h1>
+        <p class="hero__subtitle">
+          A tale of love, laughter, and the unbreakable bond that weaves our
+          hearts as one.
+        </p>
+      </div>
+      <a href="#gallery" class="hero__scroll" aria-label="Scroll down">
+        <span>Explore</span>
+        <div class="hero__scroll-line"></div>
+      </a>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-header__label">Memories</p>
+          <h2 class="section-header__title">Galeri Terkini Zenilda</h2>
+          <div class="section-header__divider"></div>
+        </div>
+
+        <div class="gallery reveal">
+          <div class="gallery__item" data-index="0">
+            <img src="assets/img/zeni/zeni-1.png" alt="Zenilda 1" loading="lazy" />
+            <span class="gallery__zoom">⊕</span>
+          </div>
+          <div class="gallery__item" data-index="1">
+            <img src="assets/img/zeni/zeni-2.png" alt="Zenilda 2" loading="lazy" />
+            <span class="gallery__zoom">⊕</span>
+          </div>
+          <div class="gallery__item" data-index="2">
+            <img src="assets/img/zeni/zeni-3.png" alt="Zenilda 3" loading="lazy" />
+            <span class="gallery__zoom">⊕</span>
+          </div>
+          <div class="gallery__item" data-index="3">
+            <img src="assets/img/zeni/zeni-4.png" alt="Zenilda 4" loading="lazy" />
+            <span class="gallery__zoom">⊕</span>
+          </div>
+          <div class="gallery__item" data-index="4">
+            <img src="assets/img/zeni/zeni-5.png" alt="Zenilda 5" loading="lazy" />
+            <span class="gallery__zoom">⊕</span>
+          </div>
+          <div class="gallery__item" data-index="5">
+            <img src="assets/img/zeni/zeni-6.png" alt="Zenilda 6" loading="lazy" />
+            <span class="gallery__zoom">⊕</span>
+          </div>
+          <div class="gallery__item" data-index="6">
+            <img src="assets/img/zeni/zeni-7.png" alt="Zenilda 7" loading="lazy" />
+            <span class="gallery__zoom">⊕</span>
+          </div>
+          <div class="gallery__item" data-index="7">
+            <img src="assets/img/zeni/zeni-8.png" alt="Zenilda 8" loading="lazy" />
+            <span class="gallery__zoom">⊕</span>
+          </div>
+          <div class="gallery__item" data-index="8">
+            <img src="assets/img/zeni/zeni-9.png" alt="Zenilda 9" loading="lazy" />
+            <span class="gallery__zoom">⊕</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Close">×</button>
+      <button class="lightbox__nav lightbox__prev" id="lightboxPrev" aria-label="Previous">‹</button>
+      <img src="" alt="Zenilda" id="lightboxImg" />
+      <button class="lightbox__nav lightbox__next" id="lightboxNext" aria-label="Next">›</button>
+    </div>
+
+    <!-- Story -->
+    <section class="section section--alt" id="story">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-header__label">Our Journey</p>
+          <h2 class="section-header__title">Acceptance</h2>
+          <div class="section-header__divider"></div>
+        </div>
+
+        <p class="story-intro reveal">
+          Haiii, tulisan ini kubuat untuk zeni, mungkin terkesan agak alay dan
+          gen-z sekali, tapi takpee wehehe, percayalah tulisan ini sebenarnya
+          hanya untuk mengingatkan aku sendiri tentang
+          <em>berharganya kamu buat aku</em>.
+        </p>
+
+        <div class="timeline">
+          <article class="chapter">
+            <div class="chapter__card">
+              <p class="chapter__number">Chapter 0</p>
+              <h3 class="chapter__title">Fase Perkenalan</h3>
+              <p class="chapter__body">
+                SMA Negeri 6 jadi momen pertemuan ku dengan zeni, selama 1 tahun
+                tidak pernah ada momen yang membuat kita dekat, bahkan ngobrol pun
+                jarang, akhirnya kita dipertemukan dari keputusanku yang
+                menggantikan mas jo jadi coach di smanam, sering ngobrol soal skkp
+                dan banyak hal tentang adikmu, awal aku inget namamu bahkan karena
+                livia yang emang mirip banget sumpah sama kamu, dan dari sana aku
+                mulai kenal kembali sosok zenilda yang selama ini tidak masuk
+                dalam radarku wkwkwk
+              </p>
+            </div>
+          </article>
+
+          <article class="chapter">
+            <div class="chapter__card">
+              <p class="chapter__number">Chapter 1</p>
+              <h3 class="chapter__title">PDKT</h3>
+              <p class="chapter__body">
+                Semua bermula sejak intensitas chat menjadi bukti nyata bahwa ada
+                perasaan antara kamu dan aku, dan semua karena SKKP, diawal aku
+                sama sekali ndak pernah anggap kamu atau bahkan punya pikiran
+                untuk suka sama kamu, karena ya kamu mbak ku, dan livia adekmu
+                adalah adekku juga di SKKP, tapi semua menjadi semakin nyata
+                dimana kita mulai dekat hanya dengan saling kirim video reels,
+                curhat tentang kerjaan, bahkan sampai ke dengerin nangismu yang
+                bahkan aku nggak ngerti harus gimana, satu momen yang buat aku
+                ngomong "lapo wong iki" adalah momen dimana kamu main ke kantor
+                dan kamu nangis di depanku yang diliat sama adekmu dan aku gak tau
+                apa penyebabnya, hadehhh your mood control is broken zen, aku tipe
+                orang yang cukup tau dan berani untuk deketin orang, tapi nggak
+                dengan yang ini, aku bahkan berani untuk ngomong "iso iki aku
+                oleh" tapi nggak, karena kondisinya kamu mbak ku wkwkwk, tapi
+                setelah semua validasi yang tak rasakan aku ngerasa sepertinya
+                kamu juga suka sama aku deh wahahah, tapi memang kondisinya nggak
+                pas karena kita hanya berjumpa via chat dan reels
+              </p>
+            </div>
+          </article>
+
+          <article class="chapter">
+            <div class="chapter__card">
+              <p class="chapter__number">Chapter 2</p>
+              <h3 class="chapter__title">Ditembak Dor ..</h3>
+              <p class="chapter__body">
+                Sempet kaget dimana sebenernya aku masih ragu dengan kondisi ini,
+                iya sih aku udah nggak sama yang lain dan nggak ada siapapun yang
+                kudeketin, sekalipun aku masih chat dan berbagi cerita dengan
+                mereka tapi sudah tidak ada rasa, karena aku sadar tujuanku udah
+                ke kamu, sejak november 2023, tapi rasanya masih aneh dan terlalu
+                cepat, sehingga aku perlu untuk cari tau sampe dimana kamu juga
+                suka dengan aku, dan tervalidasi oleh mas octo yang bilang hal
+                itu. dannn pada akhirnya kamu duluan yang ngomong, aku tak tau
+                kamu mikir apa tapi aku respect, jujur aja aku nggak punya
+                pengalaman nembak cewek, yang dulu lebih ke seperti kesepakatan
+                dan ngobrol, bahkan di awal pacaran ceweknya dulu yang nembak,
+                hadehhh, aku cukup kaget karena kupikir ndak akan secepat itu tapi
+                sepertinya kamu emang udah nggak tahan, karena dari beberapa chat
+                kamu cukup slowres di beberapa waktu, yang membuat aku mikir
+                sepertinya kamu masih belum total
+              </p>
+            </div>
+          </article>
+
+          <article class="chapter">
+            <div class="chapter__card">
+              <p class="chapter__number">Chapter 3</p>
+              <h3 class="chapter__title">Giving up because of my past problems</h3>
+              <p class="chapter__body">
+                Aku berasal dari keluarga broken home, real broken gak kek gen z
+                jaman sekarang yang cuma dilarang pulang jam 10 aja udah bilang
+                keluarga broken home. keluarga ku dan kamu tau kenapa, dengan
+                orangtua, dan keuangan mereka, aku juga kerja dengan gaji yang
+                mungkin gak masuk akal, 2 juta per bulan, bahkan aku juga bukan
+                orang yang suci seperti yang kuperlihatkan di banyak orang, aku
+                sempat menyerah dan bilang bahwa ini nggak akan bisa lanjut, cewek
+                mana yang bisa dengan cowok berisiko seperti ini, jujur setelah
+                confess, perasaanku berhenti di suka dan sayang aja, gak kepikiran
+                lebih karena aku tau kalo ini nggak akan lanjut, makanya aku mau
+                cerita secara offline karena emang semuanya nggak bisa diungkapkan
+                via suara, aku selalu nggak mau pasanganku kecewa, 3 bulan dari
+                sejak kita saling ngungkapin perasaan aku terus"an mikir apakah
+                aku cerita atau nggak, terlebih dari itu aku masih mati rasa
+                dengan namanya cinta, 50:50 mungkin rasio yang paling pas untuk
+                kondisiku saat itu, disisi manusia aku lihat karena kamu wanita
+                yang sangat cocok, tapi disisi lain aku yakin dengan kondisiku
+                yang punya background buruk akan susah, aku mulai konsultasi
+                secara implisit ke beberapa orang dan ke beberapa teman, ada yang
+                bilang "cerita aja kalau sudah jadi dan mau nikah", tapi satu kata
+                dari seorang adik yang bilang "sampean nggak fair kalo nggak
+                cerita semua diawal ke mbak zen, sama seperti ngasih harapan
+                palsu, masak nggak boleh mbak zen menolak, masak harus bisa terima
+                apa adanya" disini aku liat bahwa egoku terlalu tinggi, aku mau
+                "diterima" tanpa sadar bahwa orang tuh berhak loh nolak, aku
+                melihat diriku sama seperti sales obat abal" yang memberikan
+                harapan sembuh tapi sebenarnya hal itu adalah palsu. aku bergumul
+                terus apakah harus aku ceritakan, dan pada akhirnya aku menyerah.
+                aku berpikir semua akan kuceritakan termasuk dosaku, aku sudah
+                tidak pernah berharap ada mukjizat dan biarlah semua berjalan apa
+                adanya
+              </p>
+            </div>
+          </article>
+
+          <article class="chapter">
+            <div class="chapter__card">
+              <p class="chapter__number">Chapter 4</p>
+              <h3 class="chapter__title">Keterbukaan Awal Pemulihan</h3>
+              <p class="chapter__body">
+                Diperjalanan pacet aku merasa semua otak ku dan tenagaku terkuras
+                habis, aku keriget dingin karena ini pengalamanku yang pertama
+                cerita semua tentang hidupku, diterpa hujan dan kondisi badan yang
+                lelah, aku sudah merasa bahwa semua akan sia", aku mulai cerita
+                dari kerjaan ku, kemudian berlanjut ke keluargaku, sampai pada
+                akhirnya aku cerita ke dosaku, seketika rasa yang sudah aku bangun
+                berbulan" ke kamu hilang dan semua terasa hambar kembali, aku
+                mulai kembali ke mode irgy loser yang tidak peduli dengan
+                siapapun, momen itu adalah momen dimana aku menagis dalam cerita,
+                dan inget kembali momen dimana aku minta ampun sama tuhan dimotor
+                saat setelah melakukan dosa, kamu peluk aku dan itu menenangkan.
+                Disana aku sama sekali tidak berharap kamu akan terima aku, sama
+                sekali, tapi aku lega akhirnya aku bisa cerita ke orang lain, aku
+                merasa hatiku plong dan nggak ada kegelisahan "akhirnya aku bisa
+                cerita dan ada orang yang tau" emang agak gila dan berisiko karena
+                aku ngasuh banyak anak, dan dengan kondisi seperti ini kemungkinan
+                untuk berita menyebar sangat mudah, tapi ntah kenapa keterbukaan
+                itu selalu membawa pemulihan dalam hidupku, semakin banyak aku
+                cerita semakin banyak pemulihan dan penerimaan diri ada dalam
+                hidupku
+              </p>
+            </div>
+          </article>
+
+          <article class="chapter">
+            <div class="chapter__card">
+              <p class="chapter__number">Chapter 5</p>
+              <h3 class="chapter__title">Kak Jo</h3>
+              <p class="chapter__body">
+                Mungkin ini sedikit keluar jalur tapi hal ini ntah kenapa selalu
+                ingin kuceritakan, menurutku tuhan selalu baik dalam hidupku,
+                sekalipun aku pernah pindah agama, aku berdosa, ntah kenapa tuhan
+                selalu tarik balik aku, dan di kondisiku sama kamu, tuhan kirim
+                kak jo untuk tarik aku balik, aku nggak bayangin kalo kak jo nggak
+                ada saat itu mungkin aku sudah jadi makin nggak karuan sekarang,
+                aku lihat semua yang dilakukan tuhan lewat masjo, yang perlahan
+                buat aku kembali sama tuhan. seperti anak yang hilang, aku sudah
+                cukup hancur untuk ngomong bisa kembali lagi. dan ya tuhan
+                pulihkan semuanya, bahkan sampe aku dapet kamu, dan semua karena
+                pertolongan tuhan lewat kak jo
+              </p>
+            </div>
+          </article>
+
+          <article class="chapter">
+            <div class="chapter__card">
+              <p class="chapter__number">Chapter 6</p>
+              <h3 class="chapter__title">Acceptance</h3>
+              <p class="chapter__body">
+                Pada akhirnya kamu memutuskan untuk terima aku, dimomen itu aku
+                ngomong sama tuhan "gini ya rasanya kasih, jadi ini yang tuhan
+                rasakan setiap harinya, terima aku terus" dari sana aku sudah
+                nggak punya pikiran lain selain kasih semua ke kamu, bagiku aku
+                sudah menyerah tentang hubungan ini dan bersiap untuk kembali
+                menjalani hidup sendiri dan fokus kerja, aku lihat kamu sama
+                seperti tuhan yang mengorbankan segala kebahagiannya buat orang
+                yang berdosa seperti aku, kamu mau terima aku dari segala
+                kekuranganku, keterbatasanku, dan aku cuma bisa ngomong
+                "terimakasih tuhan", bagiku penerimaan itu segalanya, penerimaan
+                akan terus memberikan kehidupan bagi manusia, karena artinya ia
+                punya nilai kasih dalam hidupnya, aku jatuh cinta karena
+                penerimaan mu, dan akan terus seperti itu, aku akan terus menjaga
+                apa yang kamu percayakan ke aku dari penerimaan itu, ya aku sudah
+                menemukan kembali arti cinta itu
+              </p>
+            </div>
+          </article>
+
+          <article class="chapter">
+            <div class="chapter__card">
+              <p class="chapter__number">Chapter 7</p>
+              <h3 class="chapter__title">End (All About You)</h3>
+              <p class="chapter__body">
+                Kamu cantik, sabar dikit, tipeku banget, baik, mandiri, nangisan,
+                moodmu gak karuan, sambatan, ngeyelan, bingung, gajelas, receh,
+                ngorokan, selalu mikirin orang lain, pelukannya nyaman, kadang
+                meso" wkwkwk, ngomong e banyak, kuat nggak sakit"an, nggak pd,
+                ovt, pendendam, dan selalu percaya tanda yang aku nggak tau itu
+                apa wkwkwk. Aku cinta banget sama kamu, sayang banget pake banget
+                beribu kali, tiap hari kangenku ke kamu selalu baru, rasanya
+                kangen terus, bahkan aku sampe udah gak peduli sama mereka" yang
+                pernah ada dihidupku sebelumnya, dan mau fokus sama kamu aja, baru
+                ini aku mulai mikirin nikah, dan aku mau nikah sama kamu, sumpah
+                kamu jangan kemana" ya, sama aku aja, please yaa, aku usahakan
+                semuanya bisa aku kasih buat kamu, aku nggak pernah sejatuh cinta
+                ini, beneran ini nggak bullshit, aku pengen banget kamu ada sama
+                aku terus, kamu bisa ngertiin kodisiku, dan aku seneng terus kalo
+                sama kamu, aku berasa orang paling beruntung dapet kamu,
+                segimananya nanti kita, aku pengen terus sama kamu. aku terus
+                berdoa buat kamu, dan kita bisa terus tuhan kasih kesempatan untuk
+                bareng" terus. Makasih sudah mau terima aku, I can't do it without
+                you. Thank you for your support. I'm grateful for your support.
+                Thank you for being a part of my journey.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <footer class="closing">
+      <div class="closing__heart">💚</div>
+      <p class="closing__quote">
+        Cerita ini akan bersambung sampe kita tua dan bareng sama" ketemu Tuhan ya
+        Zen ...
+      </p>
+      <p class="closing__sign">Someone who loves you</p>
+      <p class="closing__name">— Stefanus Irgy</p>
+    </footer>
+
+    <script>
+      /* Scroll reveal */
+      const revealEls = document.querySelectorAll(".reveal, .chapter");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      );
+      revealEls.forEach((el) => observer.observe(el));
+
+      /* Lightbox */
+      const galleryItems = document.querySelectorAll(".gallery__item");
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightboxImg");
+      const images = Array.from(galleryItems).map(
+        (item) => item.querySelector("img").src
+      );
+      let currentIndex = 0;
+
+      function openLightbox(index) {
+        currentIndex = index;
+        lightboxImg.src = images[currentIndex];
+        lightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      function navigate(dir) {
+        currentIndex = (currentIndex + dir + images.length) % images.length;
+        lightboxImg.src = images[currentIndex];
+      }
+
+      galleryItems.forEach((item) => {
+        item.addEventListener("click", () =>
+          openLightbox(parseInt(item.dataset.index, 10))
+        );
+      });
+
+      document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
+      document.getElementById("lightboxPrev").addEventListener("click", () => navigate(-1));
+      document.getElementById("lightboxNext").addEventListener("click", () => navigate(1));
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (!lightbox.classList.contains("active")) return;
+        if (e.key === "Escape") closeLightbox();
+        if (e.key === "ArrowLeft") navigate(-1);
+        if (e.key === "ArrowRight") navigate(1);
+      });
+    </script>
+  </body>
+</html>
